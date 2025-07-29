@@ -44,7 +44,7 @@ class Player(circleshape.CircleShape):
             self.move(-dt)
         if keys[pygame.K_SPACE]:
             if self.shoot_timer > 0:
-                print("Shoot on cooldown!")
+                pass
             else:
                 self.shoot()
                 self.shoot_timer = PLAYER_SHOOT_COOLDOWN
